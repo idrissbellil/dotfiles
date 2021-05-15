@@ -1,0 +1,21 @@
+# Folder hooks
+folder-hook 'account.com.gmail.email1' 'source ~/.mutt/account.com.gmail.email1'
+folder-hook 'account.com.gmail.email2' 'source ~/.mutt/account.com.gmail.email2'
+
+# Default account
+source ~/.mutt/account.com.gmail.email1
+
+# Macros for switching accounts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/account.com.gmail.email1<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/account.com.gmail.email2<enter><change-folder>!<enter>'
+
+# Fetch mail shortcut
+bind index G imap-fetch-mail
+
+set alias_file= ~/.mutt/aliases
+set sort_alias= alias
+set reverse_alias=yes
+source $alias_file
+set sort=threads
+set narrow_tree=yes
+set sort_aux=date-received

@@ -1,0 +1,15 @@
+set imap_user = "email2@gmail.com"
+set imap_pass = "<password>"
+set folder = "imaps://email2@imap.gmail.com"
+set spoolfile = +INBOX
+mailboxes = +INBOX
+
+set header_cache = "~/.cache/mutt"
+set message_cachedir = "~/.cache/mutt"
+set postponed = "+[Gmail]/Drafts"
+unset imap_passive
+set imap_keepalive=300
+set mail_check = 120
+set ssl_force_tls = yes
+set smtp_url="smtps://email2@gmail.com@smtp.gmail.com:465/"
+set smtp_pass="<password>"

@@ -1,0 +1,20 @@
+# ...
+
+[url "https://anongit.kde.org/"]
+    insteadOf = kde:
+
+[url "git@git.kde.org:"]
+    pushInsteadOf = kde:
+
+[core]
+	editor = nvim
+	excludesfile = /home/user/.gitignore
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[pull]
+	rebase = true

@@ -1,0 +1,4 @@
+set makeprg=python\ .vim-pytest.py
+let g:pydocstring_doq_path = "<path-to-doq-bin>"
+let NERDTreeIgnore = ['\.pyc$']
+let g:jedi#environment_path = "<path-to-virtualenv>"
